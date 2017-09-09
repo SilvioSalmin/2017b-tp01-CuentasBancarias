@@ -7,5 +7,5 @@
 
 ## Estudiantes
 
-* XXX ([xxx](https://github.com/xxx))
-* XXX ([xxx](https://github.com/xxx))
+* Silvio Andres Salmin ([SilvioSalmin](https://github.com/SilvioSalmin))
+* Mariano Molina ([MarianoNicolasMolina](https://github.com/MarianoNicolasMolina))
