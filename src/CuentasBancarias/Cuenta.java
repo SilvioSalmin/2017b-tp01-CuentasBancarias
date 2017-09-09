@@ -12,9 +12,17 @@ public class Cuenta {
 	
 	public boolean transferirMontoHacia(int monto,Cuenta obj)
 	{
+		if(this.saldoInsuficiente(monto))
+			return false;
+		
 		this.saldo -= monto;
 		obj.saldo += monto;
 		
 		return true;
+	}
+	
+	public boolean saldoInsuficiente(double monto)
+	{
+		return false;
 	}
 }
