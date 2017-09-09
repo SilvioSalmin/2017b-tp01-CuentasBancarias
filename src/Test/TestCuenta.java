@@ -12,7 +12,7 @@ public class TestCuenta {
 	@Test
 	public void testTransferir()
 	{	
-		assertTrue(origen.transferirMontoHacia(1000, destino));
+		assertTrue(!origen.transferirMontoHacia(1000, destino));
 	}
 	
 	@Test
@@ -26,4 +26,6 @@ public class TestCuenta {
 	{
 		assertFalse(origen.transferirMontoHacia(1000, destino));
 	}
+	
+	
 }

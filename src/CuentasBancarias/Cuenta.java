@@ -20,10 +20,21 @@ public class Cuenta {
 		this.saldo = saldo;
 	}
 
+	public boolean estaHabilitada() {
+		return habilitada;
+	}
+
+
+	public void setHabilitada(boolean habilitada) {
+		this.habilitada = habilitada;
+	}
 
 
 	public boolean transferirMontoHacia(int monto,Cuenta destino)
 	{
+		if(!destino.estaHabilitada() || !this.estaHabilitada())
+			return false;
+		
 		if(this.saldoInsuficiente(monto))
 			return false;
 		
