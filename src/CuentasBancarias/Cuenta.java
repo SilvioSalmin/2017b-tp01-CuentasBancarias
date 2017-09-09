@@ -3,10 +3,12 @@ package CuentasBancarias;
 public class Cuenta {
 	
 	private double saldo;
+	private boolean habilitada;
 	
-	public Cuenta(double saldo)
+	public Cuenta(double saldo,boolean habilitada)
 	{
 		this.saldo = saldo;
+		this.habilitada = habilitada;
 	}
 	
 	
