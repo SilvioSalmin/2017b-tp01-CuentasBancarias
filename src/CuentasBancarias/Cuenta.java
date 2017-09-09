@@ -23,6 +23,8 @@ public class Cuenta {
 	
 	public boolean saldoInsuficiente(double monto)
 	{
+		if(this.saldo <= monto)
+			return true;
 		return false;
 	}
 }
