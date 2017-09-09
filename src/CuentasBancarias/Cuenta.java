@@ -2,7 +2,7 @@ package CuentasBancarias;
 
 public class Cuenta {
 	
-	public double saldo;
+	private double saldo;
 	
 	public Cuenta(double saldo)
 	{
@@ -10,13 +10,23 @@ public class Cuenta {
 	}
 	
 	
-	public boolean transferirMontoHacia(int monto,Cuenta obj)
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+
+
+	public boolean transferirMontoHacia(int monto,Cuenta destino)
 	{
 		if(this.saldoInsuficiente(monto))
 			return false;
 		
 		this.saldo -= monto;
-		obj.saldo += monto;
+		destino.setSaldo(destino.getSaldo() + monto);
 		
 		return true;
 	}
