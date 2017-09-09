@@ -9,9 +9,9 @@ public class TestCuenta {
 	@Test
 	public void testTransferir()
 	{
-		Cuenta origen = new Cuenta();
-		Cuenta destino = new Cuenta();
+		Cuenta origen = new Cuenta(100);
+		Cuenta destino = new Cuenta(200);
 		
-		assertTrue(origen.transferir(1000, destino));
+		assertTrue(origen.transferirMontoHacia(1000, destino));
 	}
 }
